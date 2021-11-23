@@ -1,6 +1,6 @@
 @media only screen and (min-device-width: 1440px) {
   #root {
-    background-color: #F8F8FB;
+    background-color: #f8f8fb;
   }
 }
 
@@ -8,7 +8,7 @@
   width: 375px;
   height: 72px;
   margin: 0 auto;
-  background-color: #373B53;
+  background-color: #373b53;
 }
 @media only screen and (min-device-width: 768px) {
   .header {
@@ -24,7 +24,7 @@
 .header .logo {
   width: 72px;
   height: 72px;
-  background-color: #7C5DFA;
+  background-color: #7c5dfa;
   border-radius: 0px 20px 20px 0px;
   text-align: center;
   padding: 26px;
@@ -52,7 +52,7 @@
   width: 72px;
   height: 36px;
   border-radius: 20px 0 20px 0;
-  background-color: #9277FF;
+  background-color: #9277ff;
   position: relative;
   left: -26px;
   top: -18px;
@@ -68,7 +68,7 @@
   width: 222px;
   height: 72px;
   padding-top: 26px;
-  border-right: 1px solid #494E6E;
+  border-right: 1px solid #494e6e;
   display: inline-block;
 }
 @media only screen and (min-device-width: 768px) {
@@ -109,14 +109,14 @@
   .header-desktop {
     width: 103px;
     height: 100%;
-    background-color: #373B53;
+    background-color: #373b53;
     display: inline-block;
     border-radius: 0px 20px 20px 0px;
   }
   .header-desktop .logo-desktop {
     width: 103px;
     height: 103px;
-    background-color: #7C5DFA;
+    background-color: #7c5dfa;
     border-radius: 0px 20px 20px 0px;
     text-align: center;
     padding: 32px;
@@ -133,7 +133,7 @@
     width: 103px;
     height: 51px;
     border-radius: 20px 0 20px 0;
-    background-color: #9277FF;
+    background-color: #9277ff;
     position: relative;
     left: -32px;
     top: -8px;
@@ -142,8 +142,8 @@
     width: 103px;
     height: 608px;
     padding-bottom: 21px;
-    border-bottom: 1px solid #494E6E;
-    background-color: #373B53;
+    border-bottom: 1px solid #494e6e;
+    background-color: #373b53;
   }
   .header-desktop .header-middle-desktop .icon-moon-desktop {
     margin-top: 556px;
@@ -172,7 +172,7 @@
 }
 
 .all-content {
-  background-color: #F8F8FB;
+  background-color: #f8f8fb;
   margin: 0 auto;
   width: 375px;
   font-family: "Spartan", sans-serif;
@@ -255,8 +255,8 @@
   width: 90px;
   height: 44px;
   margin-left: 18px;
-  background-color: #7C5DFA;
-  color: #FFFFFF;
+  background-color: #7c5dfa;
+  color: #ffffff;
   border-radius: 24px;
   border: 0;
   position: relative;
@@ -267,7 +267,7 @@
   letter-spacing: 0.25px;
 }
 .all-content .container-top .btn-new:hover, .all-content .container-top .btn-new:active {
-  background-color: #9277FF;
+  background-color: #9277ff;
   cursor: pointer;
 }
 @media only screen and (min-device-width: 768px) {
@@ -283,7 +283,7 @@
   height: 32px;
   border-radius: 50%;
   margin-left: -8px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: inline-block;
 }
 @media only screen and (min-device-width: 768px) {
@@ -397,7 +397,7 @@
 }
 .all-content .container-invoices .invoice:hover, .all-content .container-invoices .invoice:active {
   cursor: pointer;
-  border: 1px solid #7C5DFA;
+  border: 1px solid #7c5dfa;
 }
 @media only screen and (min-device-width: 768px) {
   .all-content .container-invoices .invoice {
@@ -481,18 +481,18 @@
   margin-right: 8px;
 }
 .all-content .paid {
-  color: #33D69F !important;
+  color: #33d69f !important;
   background-color: rgba(51, 214, 159, 0.06);
 }
 .all-content .paid .circle {
-  background-color: #33D69F;
+  background-color: #33d69f;
 }
 .all-content .pending {
-  color: #FF8F00 !important;
+  color: #ff8f00 !important;
   background-color: rgba(255, 143, 0, 0.06);
 }
 .all-content .pending .circle {
-  background-color: #FF8F00;
+  background-color: #ff8f00;
 }
 .all-content .container-back {
   width: 85px;
@@ -519,7 +519,7 @@
 .all-content .container-status {
   width: 327px;
   height: 95px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397);
   border-radius: 8px;
   padding: 24px 24px 27px 24px;
@@ -552,7 +552,7 @@
   width: 327px;
   margin: 16px auto 0 auto;
   padding: 24px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397);
   border-radius: 8px;
 }
@@ -601,7 +601,7 @@
   font-size: 15px;
   line-height: 20px;
   letter-spacing: 0.31px;
-  color: #0C0E16;
+  color: #0c0e16;
   display: block;
 }
 .all-content .container-invoice-data .user-data {
@@ -630,11 +630,11 @@
   font-size: 11px;
   line-height: 18px;
   letter-spacing: 0.23px;
-  color: #7E88C3;
+  color: #7e88c3;
   display: block;
 }
 .all-content .color-white {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .all-content .pt-10 {
   padding-top: 10px;
@@ -649,11 +649,11 @@
   padding-bottom: 32px;
 }
 .all-content .color-blue {
-  color: #7E88C3;
+  color: #7e88c3;
 }
 .all-content .payment-cart {
   width: 279px;
-  background-color: #F9FAFE;
+  background-color: #f9fafe;
   border-radius: 8px 8px 0px 0px;
   padding: 24px 24px 0 24px;
 }
@@ -704,7 +704,7 @@
 .all-content .payment-cart-footer {
   width: 279px;
   height: 80px;
-  background-color: #373B53;
+  background-color: #373b53;
   border-radius: 0px 0px 8px 8px;
   padding: 24px;
 }
@@ -721,7 +721,7 @@
 }
 .all-content .payment-cart-footer .grand-total {
   padding-top: 7px;
-  color: #FFFFFF;
+  color: #ffffff;
   display: inline-block;
 }
 .all-content .text-fs-20 {
@@ -729,46 +729,58 @@
   font-size: 20px;
   line-height: 32px;
   letter-spacing: 0.42px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .all-content .text-fs-24 {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.5px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .all-content footer {
   width: 375px;
   padding: 21px 20px 22px 20px;
   margin-top: 56px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .all-content .btn-edit {
   width: 73px;
   height: 48px;
-  background-color: #F9FAFE;
-  color: #7E88C3;
+  background-color: #f9fafe;
+  color: #7e88c3;
   border-radius: 24px;
   border: 0;
   margin-right: 7px;
 }
+.all-content .btn-edit:hover, .all-content .btn-edit:active {
+  background-color: #dfe3fa;
+  cursor: pointer;
+}
 .all-content .btn-delete {
   width: 89px;
   height: 48px;
-  background-color: #EC5757;
-  color: #FFFFFF !important;
+  background-color: #ec5757;
+  color: #ffffff !important;
   border-radius: 24px;
   border: 0;
   margin-right: 8px;
 }
+.all-content .btn-delete:hover, .all-content .btn-delete:active {
+  background-color: #ff9797;
+  cursor: pointer;
+}
 .all-content .btn-mark {
   width: 149px;
   height: 48px;
-  background-color: #7C5DFA;
-  color: #FFFFFF !important;
+  background-color: #7c5dfa;
+  color: #ffffff !important;
   border-radius: 24px;
   border: 0;
+}
+.all-content .btn-mark:hover, .all-content .btn-mark:active {
+  background-color: #9277ff;
+  cursor: pointer;
 }
 
 .modal-content {
@@ -795,8 +807,8 @@
   height: 48px;
   border-radius: 24px;
   border: 0;
-  color: #7E88C3;
-  background-color: #F9FAFE;
+  color: #7e88c3;
+  background-color: #f9fafe;
   margin-right: 8px;
 }
 
@@ -805,72 +817,72 @@
   height: 48px;
   border-radius: 24px;
   border: 0;
-  color: #FFFFFF;
-  background-color: #EC5757;
+  color: #ffffff;
+  background-color: #ec5757;
 }
 
 .light-theme .all-content {
-  background-color: #F8F8FB;
+  background-color: #f8f8fb;
 }
 .light-theme .text {
-  color: #7E88C3;
+  color: #7e88c3;
 }
 .light-theme .dark {
-  color: #0C0E16;
+  color: #0c0e16;
 }
 .light-theme .color-grey {
-  color: #888EB0;
+  color: #888eb0;
 }
 .light-theme .color-grey-neutral {
-  color: #858BB2;
+  color: #858bb2;
 }
 .light-theme h3 {
-  color: #0C0E16;
+  color: #0c0e16;
 }
 .light-theme .invoice {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .light-theme .price {
-  color: #0C0E16;
+  color: #0c0e16;
 }
 .light-theme .draft {
-  color: #373B53;
+  color: #373b53;
   background-color: rgba(55, 59, 83, 0.06);
 }
 .light-theme .draft .circle {
-  background-color: #373B53;
+  background-color: #373b53;
 }
 
 .dark-theme .all-content {
   background-color: #141625;
 }
 .dark-theme .text {
-  color: #DFE3FA;
+  color: #dfe3fa;
 }
 .dark-theme .dark {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .dark-theme .color-grey {
-  color: #DFE3FA;
+  color: #dfe3fa;
 }
 .dark-theme .color-grey-neutral {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .dark-theme h3 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .dark-theme .invoice {
-  background-color: #1E2139;
+  background-color: #1e2139;
 }
 .dark-theme .price {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .dark-theme .draft {
-  color: #DFE3FA;
+  color: #dfe3fa;
   background-color: rgba(223, 227, 250, 0.06);
 }
 .dark-theme .draft .circle {
-  background-color: #DFE3FA;
+  background-color: #dfe3fa;
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -21,6 +21,8 @@ $colorVeryLightBlue: #dfe3fa;
 $colorVeryLightBlueOpacity: rgba(223, 227, 250, 0.06);
 $colorHeader: #373b53;
 $colorDarkGrey: #494e6e;
+$colorGreyActive: #dfe3fa;
+$colorRedActive: #ff9797;
 
 #root {
     @media only screen and (min-device-width: 1440px) {
@@ -821,6 +823,12 @@ $colorDarkGrey: #494e6e;
         border-radius: 24px;
         border: 0;
         margin-right: 7px;
+
+        &:hover,
+        &:active {
+            background-color: $colorGreyActive;
+            cursor: pointer;
+        }
     }
 
     .btn-delete {
@@ -831,6 +839,12 @@ $colorDarkGrey: #494e6e;
         border-radius: 24px;
         border: 0;
         margin-right: 8px;
+
+        &:hover,
+        &:active {
+            background-color: $colorRedActive;
+            cursor: pointer;
+        }
     }
 
     .btn-mark {
@@ -840,6 +854,12 @@ $colorDarkGrey: #494e6e;
         color: $colorWhite !important;
         border-radius: 24px;
         border: 0;
+
+        &:hover,
+        &:active {
+            background-color: $colorLightPurple;
+            cursor: pointer;
+        }
     }
 }
 
