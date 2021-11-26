@@ -23,6 +23,8 @@ $colorHeader: #373b53;
 $colorDarkGrey: #494e6e;
 $colorGreyActive: #dfe3fa;
 $colorRedActive: #ff9797;
+$colorLightNavyBlue: #252945;
+$colorModalGrey: #777f98;
 
 #root {
     @media only screen and (min-device-width: 1440px) {
@@ -35,6 +37,8 @@ $colorRedActive: #ff9797;
     height: 72px;
     margin: 0 auto;
     background-color: $colorHeader;
+    position: relative;
+    z-index: 1100;
 
     @media only screen and (min-device-width: 768px) {
         width: 768px;
@@ -105,6 +109,31 @@ $colorRedActive: #ff9797;
             position: relative;
             top: -4px;
 
+            &:hover,
+            &:active {
+                cursor: pointer;
+                filter: invert(100%) sepia(43%) saturate(3436%)
+                    hue-rotate(179deg) brightness(370%) contrast(96%);
+            }
+
+            @media only screen and (min-device-width: 768px) {
+                margin-left: 530px;
+                top: -2px;
+            }
+        }
+
+        .icon-sun {
+            margin-left: 178px;
+            position: relative;
+            top: -4px;
+
+            &:hover,
+            &:active {
+                cursor: pointer;
+                filter: invert(100%) sepia(43%) saturate(3436%)
+                    hue-rotate(179deg) brightness(500%) contrast(96%);
+            }
+
             @media only screen and (min-device-width: 768px) {
                 margin-left: 530px;
                 top: -2px;
@@ -128,6 +157,8 @@ $colorRedActive: #ff9797;
 
 .header-desktop {
     display: none;
+    position: relative;
+    z-index: 1100;
 
     @media only screen and (min-device-width: 1440px) {
         width: 103px;
@@ -148,19 +179,17 @@ $colorRedActive: #ff9797;
                 width: 40px;
                 height: 40px;
                 position: relative;
-                top: 8px;
-                left: 0;
                 z-index: 50;
             }
 
             .logo-bottom-desktop {
                 width: 103px;
-                height: 51px;
+                height: 52px;
                 border-radius: 20px 0 20px 0;
                 background-color: $colorLightPurple;
                 position: relative;
                 left: -32px;
-                top: -8px;
+                top: -22px;
             }
         }
 
@@ -177,6 +206,28 @@ $colorRedActive: #ff9797;
                 height: 25px;
                 position: relative;
                 left: 41px;
+
+                &:hover,
+                &:active {
+                    cursor: pointer;
+                    filter: invert(100%) sepia(43%) saturate(3436%)
+                        hue-rotate(179deg) brightness(370%) contrast(96%);
+                }
+            }
+
+            .icon-sun-desktop {
+                margin-top: 556px;
+                width: 25px;
+                height: 25px;
+                position: relative;
+                left: 41px;
+
+                &:hover,
+                &:active {
+                    cursor: pointer;
+                    filter: invert(100%) sepia(43%) saturate(3436%)
+                        hue-rotate(179deg) brightness(500%) contrast(96%);
+                }
             }
         }
 
@@ -200,20 +251,23 @@ $colorRedActive: #ff9797;
 }
 
 .all-content {
-    background-color: $backgroundColor;
     margin: 0 auto;
     width: 375px;
     font-family: $fontStack;
     font-style: normal;
     padding-top: 3px;
+    background-color: $backgroundColor;
 
     @media only screen and (min-device-width: 768px) {
         width: 768px;
+        padding-bottom: 135px;
     }
 
     @media only screen and (min-device-width: 1440px) {
-        width: 1440px;
+        width: 730px;
         padding-top: 37px;
+        position: relative;
+        top: -37px;
     }
 
     .container-top {
@@ -339,20 +393,59 @@ $colorRedActive: #ff9797;
         }
     }
 
-    .text {
-        margin: 0;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
-        letter-spacing: 0.25px;
+    .container-filter {
+        width: 150px;
+        padding: 10px 5px 4px 20px;
+        border-radius: 8px;
+        position: absolute;
+        top: 150px;
+        margin-left: 112px;
+        z-index: 50;
+        display: none;
+
+        @media only screen and (min-device-width: 768px) {
+            width: 192px;
+            padding: 20px 20px 4px 20px;
+            margin-left: 385px;
+            top: 185px;
+        }
+
+        @media only screen and (min-device-width: 1440px) {
+            top: 165px;
+        }
+
+        .filter-option {
+            width: 85px;
+            margin-bottom: 11px;
+
+            .form-check-input {
+                border-radius: 2px;
+                margin-right: 13px;
+                border: 0;
+
+                &:checked {
+                    background-color: $colorPurple;
+                    border-color: $colorPurple;
+                }
+            }
+
+            &:hover,
+            &:active {
+                .form-check-input {
+                    border: 1px solid $colorPurple;
+                    cursor: pointer;
+                }
+                cursor: pointer;
+            }
+        }
+    }
+
+    .show {
+        display: block;
     }
 
     .mr-12 {
         margin-right: 12px;
-    }
-
-    .bold {
-        font-weight: 700;
     }
 
     h3 {
@@ -383,21 +476,51 @@ $colorRedActive: #ff9797;
         }
     }
 
-    .container-center {
-        margin: 0 auto;
+    .container-image-illustration {
+        margin: 102px auto 140px auto;
         width: 217px;
         height: 277px;
         text-align: center;
+
+        @media only screen and (min-device-width: 768px) {
+            margin: 210px auto 278px auto;
+            width: 242px;
+            height: 341px;
+
+            h3 {
+                font-size: 20px;
+                line-height: 22px;
+            }
+        }
+
+        @media only screen and (min-device-width: 1440px) {
+            margin: 141px auto 187px auto;
+        }
 
         .image-illustration {
             width: 193px;
             height: 160px;
             margin-left: 12px;
+
+            @media only screen and (min-device-width: 768px) {
+                width: 241px;
+                height: 200px;
+                margin-left: 5px;
+            }
         }
 
-        .container-center-bottom {
-            width: 217px;
+        .container-image-bottom {
+            width: 225px;
             margin: 40px auto 0 auto;
+
+            @media only screen and (min-device-width: 768px) {
+                margin: 64px auto 0 auto;
+                width: 225px;
+
+                h3 {
+                    letter-spacing: -0.3px;
+                }
+            }
 
             .pt-24 {
                 padding-top: 24px;
@@ -406,6 +529,20 @@ $colorRedActive: #ff9797;
             .pl-pr-8 {
                 padding-left: 8px;
                 padding-right: 8px;
+            }
+        }
+
+        .hidden-desktop {
+            @media only screen and (min-device-width: 1440px) {
+                display: none;
+            }
+        }
+
+        .desktop {
+            display: none;
+
+            @media only screen and (min-device-width: 1440px) {
+                display: block;
             }
         }
     }
@@ -522,6 +659,7 @@ $colorRedActive: #ff9797;
         border-radius: 6px;
         text-align: center;
         padding-top: 5px;
+        text-transform: capitalize;
 
         .circle {
             width: 8px;
@@ -550,32 +688,9 @@ $colorRedActive: #ff9797;
         }
     }
 
-    .container-back {
-        width: 85px;
-        height: 15px;
-        margin: 32px 0 32px 24px;
-
-        @media only screen and (min-device-width: 768px) {
-            margin: 32px 0 32px 44px;
-        }
-
-        @media only screen and (min-device-width: 1440px) {
-            margin: 0 0 32px 362px;
-            padding-top: 64px;
-            padding-bottom: 10px;
-        }
-
-        .icon-arrow-left {
-            margin-right: 24px;
-            position: relative;
-            top: -6px;
-        }
-    }
-
     .container-status {
         width: 327px;
         height: 95px;
-        background-color: $colorWhite;
         box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397);
         border-radius: 8px;
         padding: 24px 24px 27px 24px;
@@ -607,7 +722,6 @@ $colorRedActive: #ff9797;
         width: 327px;
         margin: 16px auto 0 auto;
         padding: 24px;
-        background-color: $colorWhite;
         box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397);
         border-radius: 8px;
 
@@ -655,7 +769,6 @@ $colorRedActive: #ff9797;
             font-size: 15px;
             line-height: 20px;
             letter-spacing: 0.31px;
-            color: $colorBlack;
             display: block;
         }
 
@@ -686,7 +799,6 @@ $colorRedActive: #ff9797;
         font-size: 11px;
         line-height: 18px;
         letter-spacing: 0.23px;
-        color: $colorLightBlue;
         display: block;
     }
 
@@ -716,7 +828,6 @@ $colorRedActive: #ff9797;
 
     .payment-cart {
         width: 279px;
-        background-color: $colorLightGrey;
         border-radius: 8px 8px 0px 0px;
         padding: 24px 24px 0 24px;
 
@@ -772,7 +883,6 @@ $colorRedActive: #ff9797;
     .payment-cart-footer {
         width: 279px;
         height: 80px;
-        background-color: $colorNavyBlue;
         border-radius: 0px 0px 8px 8px;
         padding: 24px;
 
@@ -798,27 +908,22 @@ $colorRedActive: #ff9797;
         line-height: 32px;
         letter-spacing: 0.42px;
         color: $colorWhite;
-    }
 
-    .text-fs-24 {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 32px;
-        letter-spacing: -0.5px;
-        color: $colorWhite;
+        @media only screen and (min-device-width: 768px) {
+            font-size: 24px;
+            letter-spacing: -0.5px;
+        }
     }
 
     footer {
         width: 375px;
         padding: 21px 20px 22px 20px;
         margin-top: 56px;
-        background-color: $colorWhite;
     }
 
     .btn-edit {
         width: 73px;
         height: 48px;
-        background-color: $colorLightGrey;
         color: $colorLightBlue;
         border-radius: 24px;
         border: 0;
@@ -826,7 +931,6 @@ $colorRedActive: #ff9797;
 
         &:hover,
         &:active {
-            background-color: $colorGreyActive;
             cursor: pointer;
         }
     }
@@ -883,13 +987,69 @@ $colorRedActive: #ff9797;
     }
 }
 
+.container-back {
+    width: 85px;
+    height: 15px;
+    margin: 32px 0 32px 24px;
+
+    @media only screen and (min-device-width: 768px) {
+        margin: 32px 0 32px 44px;
+    }
+
+    @media only screen and (min-device-width: 1440px) {
+        width: 730px;
+        margin: 0 auto;
+        padding-top: 64px;
+        padding-bottom: 10px;
+    }
+
+    span {
+        position: relative;
+        top: -5px;
+    }
+
+    .icon-arrow-left {
+        margin-right: 24px;
+        position: relative;
+        top: -6px;
+
+        @media only screen and (min-device-width: 1440px) {
+            top: -36px;
+        }
+    }
+
+    .go-back-text {
+        &:hover,
+        &:active {
+            cursor: pointer;
+            color: $colorLightBlue;
+        }
+
+        @media only screen and (min-device-width: 1440px) {
+            position: relative;
+            top: -36px;
+        }
+    }
+}
+
+.text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.25px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
 .btn-cancel {
     width: 91px;
     height: 48px;
     border-radius: 24px;
     border: 0;
     color: $colorLightBlue;
-    background-color: $colorLightGrey;
     margin-right: 8px;
 }
 
@@ -900,6 +1060,131 @@ $colorRedActive: #ff9797;
     border: 0;
     color: $colorWhite;
     background-color: $colorRed;
+}
+
+.modal {
+    top: 64px;
+
+    @media only screen and (min-device-width: 768px) {
+        width: 616px;
+    }
+
+    .modal-dialog {
+        margin: 0 auto;
+
+        .modal-content {
+            width: 375px;
+            border: 0;
+            border-radius: 0;
+            margin: 0 auto;
+            padding: 35px 0 0 0;
+
+            .container-back {
+                margin: 0 0 24px 24px;
+            }
+
+            .modal-body {
+                width: 327px;
+                padding: 0;
+                margin: 0 auto;
+
+                .color-purple {
+                    color: $colorPurple;
+                }
+
+                .text-modal {
+                    padding-bottom: 10px;
+                    display: block;
+                    color: $colorLightBlue;
+                }
+
+                .modal-container {
+                    width: 327px;
+                    padding-top: 24px;
+
+                    .form-control {
+                        width: 327px;
+                        height: 48px;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                    }
+
+                    .modal-container-small {
+                        width: 152px;
+                        display: inline-block;
+
+                        .form-control {
+                            width: 152px;
+                        }
+                    }
+
+                    .mr-23 {
+                        margin-right: 23px;
+                    }
+                }
+
+                .pb-40 {
+                    padding-bottom: 40px;
+                }
+
+                h2 {
+                    margin-top: 66px;
+                    font-size: 18px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    letter-spacing: 0.38px;
+                    color: $colorModalGrey;
+                }
+            }
+
+            .modal-footer {
+                width: 375px;
+                padding: 21px 24px 22px 24px;
+                margin-bottom: 47px;
+
+                .btn-discard {
+                    width: 84px;
+                    height: 48px;
+                    border-radius: 24px;
+                    border: 0;
+                    margin: 0 7px 0 0;
+                    background-color: $colorLightGrey;
+                    color: $colorLightBlue;
+                    font-weight: 500;
+                }
+
+                .btn-save-as-draft {
+                    width: 117px;
+                    height: 48px;
+                    margin: 0 7px 0 0;
+                    border-radius: 24px;
+                    border: 0;
+                    background-color: $colorNavyBlue;
+                    font-weight: 500;
+                    color: $colorGrey;
+                }
+
+                .btn-save-send {
+                    width: 112px;
+                    height: 48px;
+                    margin: 0;
+                    border-radius: 24px;
+                    border: 0;
+                    background-color: $colorPurple;
+                    color: $colorWhite;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.5px;
+        font-weight: 700;
+        margin: 0 0 24px 24px;
+    }
 }
 
 .light-theme {
@@ -943,6 +1228,90 @@ $colorRedActive: #ff9797;
             background-color: $colorNavyBlue;
         }
     }
+
+    .container-filter {
+        background-color: $colorWhite;
+        box-shadow: 0px 10px 20px rgba(72, 84, 159, 0.25);
+
+        .form-check-input {
+            background-color: $colorVeryLightBlue;
+        }
+
+        .text {
+            color: $colorDarkBlue;
+        }
+    }
+
+    .container-status {
+        background-color: $colorWhite;
+    }
+
+    .container-invoice-data {
+        background-color: $colorWhite;
+    }
+
+    .text-date {
+        color: $colorBlack;
+    }
+
+    .text-information {
+        color: $colorLightBlue;
+    }
+
+    .payment-cart {
+        color: $colorLightGrey;
+    }
+
+    .payment-cart-footer {
+        background-color: $colorNavyBlue;
+    }
+
+    footer {
+        background-color: $colorWhite;
+    }
+
+    .btn-edit {
+        background-color: $colorLightGrey;
+
+        &:hover,
+        &:active {
+            background-color: $colorGreyActive;
+        }
+    }
+
+    .btn-cancel {
+        background-color: $colorLightGrey;
+    }
+
+    .modal-content {
+        background-color: $colorWhite;
+
+        .color-header {
+            color: $colorBlack;
+        }
+
+        .text-modal {
+            color: $colorLightBlue;
+        }
+
+        .form-control {
+            background-color: $colorWhite;
+            border: 1px solid $colorVeryLightBlue;
+        }
+
+        .modal-footer {
+            background-color: $colorWhite;
+
+            .btn-discard {
+                background-color: $colorLightGrey;
+                color: $colorLightBlue;
+            }
+
+            .btn-save-as-draft {
+                color: $colorGrey;
+            }
+        }
+    }
 }
 
 .dark-theme {
@@ -970,6 +1339,19 @@ $colorRedActive: #ff9797;
         color: $colorWhite;
     }
 
+    .container-filter {
+        background-color: $colorLightNavyBlue;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+
+        .form-check-input {
+            background-color: $colorDarkBlue;
+        }
+
+        .text {
+            color: $colorWhite;
+        }
+    }
+
     .invoice {
         background-color: $colorDarkBlue;
     }
@@ -984,6 +1366,77 @@ $colorRedActive: #ff9797;
 
         .circle {
             background-color: $colorVeryLightBlue;
+        }
+    }
+
+    .container-status {
+        background-color: $colorDarkBlue;
+    }
+
+    .container-invoice-data {
+        background-color: $colorDarkBlue;
+    }
+
+    .text-date {
+        color: $colorWhite;
+    }
+
+    .text-information {
+        color: $colorVeryLightBlue;
+    }
+
+    .payment-cart {
+        color: $colorLightNavyBlue;
+    }
+
+    .payment-cart-footer {
+        background-color: $colorBlack;
+    }
+
+    footer {
+        background-color: $colorDarkBlue;
+    }
+
+    .btn-edit {
+        background-color: $colorLightNavyBlue;
+
+        &:hover,
+        &:active {
+            background-color: $colorWhite;
+        }
+    }
+
+    .btn-cancel {
+        background-color: $colorLightNavyBlue;
+    }
+
+    .modal-content {
+        background-color: $backgroundColorDark;
+
+        .color-header {
+            color: $colorWhite;
+        }
+
+        .text-modal {
+            color: $colorGrey;
+        }
+
+        .form-control {
+            background-color: $colorDarkBlue;
+            border: 1px solid $colorLightNavyBlue;
+        }
+
+        .modal-footer {
+            background-color: $colorDarkBlue;
+
+            .btn-discard {
+                background-color: $colorLightNavyBlue !important;
+                color: $colorGreyActive !important;
+            }
+
+            .btn-save-as-draft {
+                color: $colorVeryLightBlue !important;
+            }
         }
     }
 }
