@@ -8,7 +8,7 @@ import iconLogo from './assets/images/logo.svg';
 import iconMoon from './assets/images/icon-moon.svg';
 import iconSun from './assets/images/icon-sun.svg';
 import avatarIcon from './assets/images/image-avatar.jpg';
-import {useState} from 'react/cjs/react.development';
+import {useState} from 'react';
 
 function App() {
     const invoices = localStorage.getItem('invoiceList')
